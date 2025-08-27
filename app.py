@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 # Configure MariaDB connection
 db_config = {
-    "host": "localhost",
-    "user": "your_user",
-    "password": "your_password",
-    "database": "your_database"
+    "host": "maria-db",
+    "user": "root",
+    "password": "wHu8QBfsjxcx6186Ko4FhkbS",
+    "database": "gifted_greider"
 }
 
 # Helper function
