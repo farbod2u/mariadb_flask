@@ -15,7 +15,6 @@ db_config = {
 def get_db_connection():
     return mysql.connector.connect(**db_config)
 
-
 # CREATE
 @app.route("/personal", methods=["POST"])
 def create_person():
@@ -46,6 +45,9 @@ def get_all_persons():
     conn.close()
     return jsonify(result)
 
+@app.route("/test", methods=["GET"])
+def get_test():
+    return jsonify({"data": "This is a test."}), 200
 
 # READ one
 @app.route("/personal/<int:person_id>", methods=["GET"])
